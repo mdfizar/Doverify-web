@@ -1,0 +1,77 @@
+/* ========= oder managment section ========== */
+.icon-box-border {
+  border-top: 2px solid gray;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+
+
+
+
+/* ========= our card section ========= */
+.our-card {
+  position: relative;
+}
+.oure-card-circle {
+  position: absolute;
+  left: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 18;
+
+}
+.ourecard-card {
+  position: relative;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.ourecard-card p {
+  position: absolute;
+  right: 50%;
+  top: 7%;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 20;
+  color: #ff5b12db;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+/* .ourecard-card h1 {
+  text-align: center;
+  margin-top: auto;
+  font-size: 7rem;
+  font-weight: 600;
+  font-family: roboto;
+} */
+.our-card-container>div {
+  padding: 2px !important;
+}
+/* .our-card-ovarly {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: firebrick;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+} */
+.ourecard-card:hover p  {
+  opacity: 1;
+}
+

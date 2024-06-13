@@ -1,0 +1,676 @@
+/* ======= galobal css ========== */
+:root {
+  --btn1color: #ff0000;
+  --btn-primary: #121212;
+  --text-color: #293a4e;
+  --border-radius: 7px;
+  --pa1: 8px;
+  --navfont: 17px;
+  --text-white: #ffffff;
+  --bascolor: #250f6b;
+  --titlefontsize: 20px;
+  --decriptionfontsize: 16px;
+}
+.pa1 {
+  padding: var(--pa1);
+}
+body {
+  font-family: roboto;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color:var(--text-color);
+}
+.btn-orange {
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--btn1color);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  transition: 0.4s;
+
+}
+.btn-orange:hover {
+  background-color: #f7912a;
+}
+.btn-login {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border: 1px solid var(--btn1color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  transition: 0.4s;
+}
+.btn-login:hover {
+  background-color: #ff591268;
+}
+/* ========= section heading =========== */
+.section-heading {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+ /* ======== description ========= */
+ .descripton {
+  font-size: 20px;
+  color: var(--text-color);
+ }
+/* ======== header =============== */
+header {
+  position: fixed;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  background-color: #ffffff;
+  border-bottom:  1px solid #edf1f4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  z-index: 90;
+}
+.tolggeicon {
+  border: none;
+  background: none;
+}
+.tolggeicon img {
+  width: 30px;
+}
+.navbar-nav li a {
+  font-size: var(--navfont);
+  font-weight: 400;
+  color: var(--text-color);
+  font-family: roboto, sans-serif;
+}
+.navbar-nav li a:hover {
+  color: red !important;
+}
+/* .navbar-nav li a:focus {
+  color: #ff5b12;
+} */
+/* ======= dropwdown ======== */
+.Dropdwon {
+  position: relative;
+  cursor: pointer;
+}
+.Dropdown-item ul li {
+  padding: 5px 0px;
+}
+.Dropdown-item {
+  position: absolute;
+  top: 54px;
+  right: 0px;
+  background-color: #ffffffff;
+  border-radius: 0px 0px 7px 7px;
+  width: 150px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dropdwon:hover .Dropdown-item {
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.Dropdwon:hover .fa-angle-right{
+   transform: rotate(90deg);
+}
+.Dropdwon .fa-angle-right {
+  transition: all 0.4s ease-in-out;
+}
+.Dropdown-item ul li {
+  list-style-type: none;
+}
+.Dropdown-item ul li a {
+  text-decoration: none;
+  color: black;
+}
+.Dropdown-item ul li a:focus {
+  color:red;
+}
+/*  ======= product dropdown ======== */
+.product-dropdown {
+  position: relative;
+}
+.product-dropdown-item {
+  position: absolute;
+  top: 55px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 200px;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.3s ease-in-out;
+}
+.product-dropdown:hover .product-dropdown-item  {
+  height: 100px;
+}
+.product-dropdown span i {
+  transition: all 0.4s ease-in-out;
+}
+.product-dropdown:hover span i {
+  transform: rotate(90deg);
+}
+
+
+
+/*============ mainContent ============= */
+.mainContenr {
+  padding-top:68px;
+}
+.firstTitle {
+  text-align:center;
+  color: #ffffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.firstTitle .nfc-learn {
+  text-underline-offset: 4px;
+  color: #ffffffff;
+  font-size: 16px;
+}
+.nfc-headline h2 {
+  font-size: 55px;
+  color: var(--text-color);
+  line-height: 65px;
+  font-weight: 700;
+}
+.nfc-headline p {
+  font-size: var(--titlefontsize);
+}
+.arrow-effect span i {
+  margin-left: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.arrow-effect:hover  span i{
+  margin-left: 30px;
+}
+
+
+
+
+/* ========= doverify-step section ==========  */
+.doverify-step-container>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.verify-setp-img {
+  width: 100%;
+}
+.doverify-step-description h4 {
+  text-transform: uppercase;
+  font-size: var(--titlefontsize);
+  color: var(--text-color);
+  font-weight: 400;
+}
+.verify-setp-arrow {
+  object-fit: contain;
+}
+#doverify-step-hover:hover #doverify-hover-item {
+ transform: scale(1.1);
+}
+#doverify-step-hover:hover .doverify-step-description {
+  padding-top: 30px;
+}
+#doverify-hover-item {
+  transition: all 0.5s ease-in-out;
+}
+.doverify-step-description {
+  padding-top: 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+
+}
+.doverify-step-description p {
+  font-size: var(--decriptionfontsize);
+  color: var(--text-color);
+}
+
+
+
+
+/* =========== our features =========== */
+.userCase-card {
+  padding: 30px;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.userCase-card h5 {
+  font-size: var(--titlefontsize);
+  color: var(--text-color);
+  font-weight: 400;
+}
+.userCase-card p {
+  font-size: var(--decriptionfontsize);
+  transition: all 0.5s ease-in-out;
+}
+.userCase-card:hover {
+  margin-top: -10px;
+}
+/* .userCase-card:hover p {
+  color: white;
+}
+.userCase-card:hover h5 {
+  color: white;
+} */
+
+/* ========= why choose us =========== */
+.service-container-bg-img {
+  max-width: 600px;
+  margin: 0px auto;
+}
+.service-card1, .service-card2 {
+  width: 300px;
+}
+.service-card1 h5, .service-card2 h5 {
+  font-weight: 400;
+  margin: 0px;
+  font-size: var(--titlefontsize);
+  color: var(--text-color);
+  
+}
+.service-card1 p, .service-card2 p{
+ font-size: var(--decriptionfontsize);
+}
+.service-card1 span i, .service-card2 span i {
+  font-size: 18px;
+  color: var(--text-color);
+}
+.service-card2 {
+  margin-left: auto;
+}
+
+
+
+
+
+/* ========= our teqnology ============ */
+.shadow {
+  margin-top: -20px;
+  box-shadow: none !important;
+}
+.ourTeqnology-card{
+  padding: 10px;
+}
+.ourTeqnology-card h5{
+  font-size: var(--titlefontsize);
+  color: var(--text-color);
+  font-weight: 400;
+} 
+.ourTeqnology-card p {
+  font-size: var(--decriptionfontsize);
+  color: var(var(--text-color));
+}
+
+
+
+
+
+
+/* ======== benefit of  NFC ======== */
+.benefit-icon-container {
+  width: 200px;
+}
+.benefit-icon-container .benefit-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+.icon-box-arrow {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+}
+.benefit-icon-box span i {
+  font-size: 30px;
+}
+.hel {
+  position: relative;
+  height: 40px;
+  border: 1px solid red;
+  width: 0px
+
+}
+.top-hel {
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: -3.4px;
+}
+.bottom-hel {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: -4px;
+  left: -5.3px;
+}
+.benefit-desciription {
+  padding-top: 40px;
+}
+.benefit-desciription p {
+  font-size: var(--decriptionfontsize);
+  color: var(--text-color);
+}
+
+
+
+/* ========== pricing section ===========  */
+.pricing-card {
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding:20px 40px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.pricing-head {
+  width: 115px;
+  margin: auto;
+  text-align: center;
+}
+.pricing-head h5 {
+  font-size: var(--titlefontsize);
+  color: var(--text-color);
+  font-weight: 400;
+
+}
+.pricing-head p {
+  font-size: var(--decriptionfontsize);
+  color:var(--text-color);
+  font-weight: 400;
+}
+
+/* ======= hover effect ========= */
+.pricing-card:hover {
+  background-color:#ff000040;
+}
+.pricing-card:hover button {
+  background-color: white;
+  color: #250f6b;
+  font-weight: 700;
+}
+.prigin-body {
+  padding: 0px 10px;
+  position: relative;
+}
+.prigin-body ul {
+  padding: 0px;
+}
+.prigin-body ul li {
+  list-style-type: none;
+  padding: 7px 0px;
+}
+.prigin-body ul li span {
+  margin-right: 10px;
+}
+.line {
+  height: 2px;
+  background-color: gray;
+}
+
+
+
+
+
+/* ======== whats new slider section =========== */
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow:visible !important;
+  position: static !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.whatsNew_slider .slide-item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.whatsNew_slider .slide-item-text {
+  width: 70%;
+}
+.whatsNew_slider .slide-item-text .heading {
+  color: var(--btn1color);
+}
+.whatsNew_slider .slide-item-text .descripton {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+.read-btn {
+  border: 0px;
+  gap: 10px;
+  background:none;
+  text-decoration: none;
+  color: var(--btn1color);
+}
+.read-btn p{
+  color: var(--btn1color);
+  margin-top: -5px;
+}
+.whatsNew_slider .slide-item-img {
+  width: 30%;
+  height: 100%;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+  color: #ff5b12 !important;
+  height: 30px;
+  width: 30px
+}
+.swiper-button-prev {
+  left: -20px !important;
+}
+.swiper-button-next{
+  right: -20px !important;
+}
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+  content: '' !important;
+}
+
+
+
+/* ======= faq section ========= */
+.faq-item {
+  position: relative;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 0.5s ease-in-out;
+  margin: 7px 0px;
+} 
+.faq-title {
+  color: var(--text-color);
+  font-size: var(--titlefontsize);
+}
+.faq-item  h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.faq-item span {
+  position: absolute;
+  right: 5px;
+  top:10px;
+} 
+.faq-item span i {
+  transition: all 0.5s ease-in-out;
+}
+.faq-description {
+  margin: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding-left: 20px;
+}
+.faq-item:hover  .faq-description {
+  height: 30px;
+}
+.faq-item:hover  span i  {
+  transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== footer ============== */
+footer {
+  background-color: #edeaea5d;
+}
+.footer-item{
+  list-style-type:none;
+  padding: 5px;
+  display: flex;
+  gap: 15px;
+  margin:  0px;
+}
+.footer-item li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+} 
+.footer-item li a:hover {
+  color:#ff0000;
+}
+footer span i {
+  font-size: 25px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+footer span i:hover {
+  color:#ff0000;
+}
+/* ======== sm-footer-container =========== */
+/* .accordion {
+  background: none !important;
+}
+.accordion-item {
+  background: none !important;
+}
+.accordion-button {
+  background: none !important;
+  color: white;
+  border-bottom: 1px solid;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.accordion-button::after{
+  content: '';
+  margin-left: 0px;
+  width: 0px;
+}
+.accordion-button span {
+  margin-left: auto;
+  color: white;
+}
+.accordion-body {
+  color: rgb(192, 192, 192) !important;
+}
+.accordion-body ul {
+  padding: 0px;
+}
+.accordion-body ul li {
+  list-style-type: none;
+}
+.accordion-body ul li a {
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+}
+
+.footer-item-container li a {
+  text-decoration: none;
+  font-size: 14px;
+  color:#b8b8b8 !important;
+  font-weight: 500 !important;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 8px !important;
+} 
+.icon-container a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight:400 !important;
+  color:#b8b8b8;
+}
+.footer-icon span i {
+  color: white;
+} */
+
+
+
+
+/* ========= responsive ========= */
+@media (min-width: 200px) and (max-width: 766px) {
+  .nfc-headline {
+    text-align: center;
+  }
+  .section-heading {
+    font-size: 40px;
+  }
+  .mainContenr {
+    padding-top: 80px;
+  }
+  /* ====== whats new slider =========== */
+  .swiper-button-prev {
+    left: 0px !important;
+  }
+  .swiper-button-next{
+    right: 0px !important;
+  }
+  .service-card1, .service-card2{
+    margin-left: 0px;
+  }
+  .service-card1, .service-card2 {
+    width: 100%;
+  }
+ .product-dropdown-item {
+  position: static;
+  box-shadow: 0px 0px 0px 0px;
+ }
+}
