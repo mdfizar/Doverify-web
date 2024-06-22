@@ -19,8 +19,10 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  color:var(--text-color);
+  color: var(--text-color);
 }
+
+/* ==== all button design ====== */
 .btn-orange {
   text-decoration: none;
   text-align: center;
@@ -35,7 +37,7 @@ body {
 
 }
 .btn-orange:hover {
-  background-color: #f7912a;
+  background-color: #ff5b12;
 }
 .btn-login {
   text-decoration: none;
@@ -50,6 +52,18 @@ body {
 .btn-login:hover {
   background-color: #ff591268;
 }
+.read-btn {
+  border: 0px;
+  gap: 10px;
+  background:none;
+  text-decoration: none;
+  color: var(--btn1color);
+}
+.read-btn p{
+  color: var(--btn1color);
+  font-size: var(--titlefontsize);
+}
+
 /* ========= section heading =========== */
 .section-heading {
   color: var(--text-color);
@@ -155,9 +169,6 @@ header {
 .product-dropdown:hover span i {
   transform: rotate(90deg);
 }
-
-
-
 /*============ mainContent ============= */
 .mainContenr {
   padding-top:68px;
@@ -190,10 +201,6 @@ header {
 .arrow-effect:hover  span i{
   margin-left: 30px;
 }
-
-
-
-
 /* ========= doverify-step section ==========  */
 .doverify-step-container>div {
   display: flex;
@@ -232,9 +239,6 @@ header {
   font-size: var(--decriptionfontsize);
   color: var(--text-color);
 }
-
-
-
 
 /* =========== our features =========== */
 .userCase-card {
@@ -277,7 +281,6 @@ header {
   margin: 0px;
   font-size: var(--titlefontsize);
   color: var(--text-color);
-  
 }
 .service-card1 p, .service-card2 p{
  font-size: var(--decriptionfontsize);
@@ -289,10 +292,6 @@ header {
 .service-card2 {
   margin-left: auto;
 }
-
-
-
-
 
 /* ========= our teqnology ============ */
 .shadow {
@@ -307,17 +306,15 @@ header {
   color: var(--text-color);
   font-weight: 400;
 } 
-.ourTeqnology-card p {
+.ourTeqnology-card > p {
   font-size: var(--decriptionfontsize);
   color: var(var(--text-color));
 }
 
-
-
-
-
-
 /* ======== benefit of  NFC ======== */
+#nfc-benefit-container {
+  background-color: #d1bfb521;
+}
 .benefit-icon-container {
   width: 200px;
 }
@@ -345,7 +342,6 @@ header {
   height: 40px;
   border: 1px solid red;
   width: 0px
-
 }
 .top-hel {
   width: 7px;
@@ -372,8 +368,6 @@ header {
   font-size: var(--decriptionfontsize);
   color: var(--text-color);
 }
-
-
 
 /* ========== pricing section ===========  */
 .pricing-card {
@@ -428,10 +422,6 @@ header {
   background-color: gray;
 }
 
-
-
-
-
 /* ======== whats new slider section =========== */
 .swiper {
   width: 100%;
@@ -439,7 +429,6 @@ header {
   overflow:visible !important;
   position: static !important;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -468,17 +457,6 @@ header {
   line-height: 24px;
   font-size: 16px;
 }
-.read-btn {
-  border: 0px;
-  gap: 10px;
-  background:none;
-  text-decoration: none;
-  color: var(--btn1color);
-}
-.read-btn p{
-  color: var(--btn1color);
-  margin-top: -5px;
-}
 .whatsNew_slider .slide-item-img {
   width: 30%;
   height: 100%;
@@ -500,8 +478,6 @@ header {
   content: '' !important;
 }
 
-
-
 /* ======= faq section ========= */
 .faq-item {
   position: relative;
@@ -509,7 +485,7 @@ header {
   cursor: pointer;
   border-radius: 7px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   margin: 7px 0px;
 } 
 .faq-title {
@@ -517,7 +493,7 @@ header {
   font-size: var(--titlefontsize);
 }
 .faq-item  h3 {
-  font-size: 20px;
+  font-size: var(--titlefontsize);
   font-weight: 400;
   color: var(--text-color);
 }
@@ -526,36 +502,23 @@ header {
   right: 5px;
   top:10px;
 } 
-.faq-item span i {
+/* .faq-item span i {
   transition: all 0.5s ease-in-out;
-}
+} */
 .faq-description {
   margin: 0px;
   height: 0px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   padding-left: 20px;
+  font-size: var(--decriptionfontsize);
 }
 .faq-item:hover  .faq-description {
-  height: 30px;
+  height: 100%;
 }
 .faq-item:hover  span i  {
   transform: rotate(90deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============== footer ============== */
 footer {
@@ -585,76 +548,21 @@ footer span i {
 footer span i:hover {
   color:#ff0000;
 }
-/* ======== sm-footer-container =========== */
-/* .accordion {
-  background: none !important;
-}
-.accordion-item {
-  background: none !important;
-}
-.accordion-button {
-  background: none !important;
-  color: white;
-  border-bottom: 1px solid;
-  border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-}
-
-.accordion-button::after{
-  content: '';
-  margin-left: 0px;
-  width: 0px;
-}
-.accordion-button span {
-  margin-left: auto;
-  color: white;
-}
-.accordion-body {
-  color: rgb(192, 192, 192) !important;
-}
-.accordion-body ul {
-  padding: 0px;
-}
-.accordion-body ul li {
-  list-style-type: none;
-}
-.accordion-body ul li a {
-  text-decoration: none;
-  color: rgb(206, 206, 206);
-}
-
-.footer-item-container li a {
-  text-decoration: none;
-  font-size: 14px;
-  color:#b8b8b8 !important;
-  font-weight: 500 !important;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin-top: 8px !important;
-} 
-.icon-container a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight:400 !important;
-  color:#b8b8b8;
-}
-.footer-icon span i {
-  color: white;
-} */
-
-
-
 
 /* ========= responsive ========= */
 @media (min-width: 200px) and (max-width: 766px) {
   .nfc-headline {
     text-align: center;
   }
+  .nfc-headline h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
   .section-heading {
-    font-size: 40px;
+    font-size: 28px;
   }
   .mainContenr {
-    padding-top: 80px;
+    padding-top: 70px;
   }
   /* ====== whats new slider =========== */
   .swiper-button-prev {
@@ -673,4 +581,14 @@ footer span i:hover {
   position: static;
   box-shadow: 0px 0px 0px 0px;
  }
+
+ /* footer  */
+ .footer-content-alignment {
+  text-align: center;
+  padding-bottom: 18px;
+}
+.footer-item {
+  justify-content: center;
+  padding-bottom: 10px;
+}
 }
