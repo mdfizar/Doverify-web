@@ -627,6 +627,9 @@ footer span i:hover {
   position: static;
   box-shadow: 0px 0px 0px 0px;
  }
+   .whatsup-btn {
+  margin: 10px auto;
+ }
  /* ==== faq ====== */
  .faq-item:hover  .faq-description {
   height: 190px;
