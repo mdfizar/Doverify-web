@@ -56,14 +56,14 @@ var swiper = new Swiper(".whatsNew_slider", {
 
 // aos ======
 AOS.init();
+// faq ========
 var showHide = document.querySelectorAll(".faq-item")
-
 showHide.forEach((item) => {
   item.addEventListener("click", () => {
     var icon = item.querySelector(".faq-item span i");
     var description = item.querySelector(".faq-description");
     if (description.style.height === "0px") {
-     description.style.height = "100px";  
+     description.style.height = "140px";  
      icon.style.transform = "rotate(-90deg)"; 
     } else {
       description.style.height = "0px";
