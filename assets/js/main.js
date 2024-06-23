@@ -56,11 +56,20 @@ var swiper = new Swiper(".whatsNew_slider", {
 
 // aos ======
 AOS.init();
-var faqItem = document.getElementById("faq-ans");
- function faqItemHanddle () {
-  if(faqItem.style.height === "0px") {
-    faqItem.style.height ="100%";
-  } else {
-    faqItem.style.height ="0px";
-  }
- }
+var showHide = document.querySelectorAll(".faq-item")
+
+showHide.forEach((item) => {
+  item.addEventListener("click", () => {
+    var icon = item.querySelector(".faq-item span i");
+    var description = item.querySelector(".faq-description");
+    if (description.style.height === "0px") {
+     description.style.height = "100px";  
+     icon.style.transform = "rotate(-90deg)"; 
+    } else {
+      description.style.height = "0px";
+      icon.style.transform = "rotate(90deg)";
+    }
+  });
+});
+
+
