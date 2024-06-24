@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <!-- ====== custom css ====== -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/carddesing.css">
   <!-- ====== swiper ========== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- ===== aos ======== -->
@@ -128,10 +129,32 @@
               </button>
             </div>
           </div>
-          <div class="col-12 col-lg-5">
-            <div class="nfc-template d-flex align-items-center justify-content-center">
-              <img class="w-100" src="assets/img/nfc-profile.jpg" alt="">
+          <div  class="col-12 col-lg-5 banner-slider-container">
+
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/nfc-profile.jpg" alt="nfc slider img">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/nfc-profile.jpg" alt=" nfc slider img">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/nfc-profile.jpg" alt=" nfc slider img">
+                </div>
+              </div>
+              <div class="swiper-button-next next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="swiper-button-prev prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
             </div>
+
+            <!-- <div class="nfc-template d-flex align-items-center justify-content-center">
+              <img class="w-100" src="assets/img/nfc-profile.jpg" alt="">
+            </div> -->
           </div>
         </div>
       </div>
@@ -572,7 +595,7 @@
               <div class="prigin-body mt-3 pb-3">
                 <div class="pricing-head">
                   <h5>Basic</h5>
-                  <p>800BDT</p>
+                  <p>800 BDT</p>
                 </div>
                 <ul>
                   <li>
@@ -602,11 +625,11 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div style="background-color: #ff000040; color: var(-textcolor);" class="pricing-card">
+            <div style="background-color: rgba(0, 0, 0, 0.75); color: white;" class="pricing-card">
               <div class="prigin-body mt-3 pb-3">
                 <div class="pricing-head">
-                  <h5>Standard</h5>
-                  <p>1200BDT</p>
+                  <h5 style="color: white;">Standard</h5>
+                  <p style="color: white;">1200 BDT</p>
                 </div>
                 <ul>
                   <li>
@@ -641,7 +664,7 @@
               <div class="prigin-body mt-3 pb-3">
                 <div class="pricing-head">
                   <h5>Premium</h5>
-                  <p>1460BD</p>
+                  <p>1460 BDT</p>
                 </div>
                 <ul>
                   <li>
@@ -683,17 +706,17 @@
         <div class="container">
           <div class="row our-card-container">
             <div class="col-12 col-md-6">
-              <div class="ourecard-card">
+              <div style="border: 3px solid red;" class="ourecard-card">
                 <div style="background-color: #d7d5d6;" class="our-card-ovarly"></div>
-                <p class="text-center">smart card</p>
-                <img class="w-100" src="assets/img/Nfcsmartcard3.jpg" alt="">
+                <p class="text-center">NFC Smart Card</p>
+                <img class="w-100" src="assets/img/card/6.png" alt="">
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="ourecard-card">
                 <div style="background-color: #efc29d;" class="our-card-ovarly"></div>
                 <p>Weaknesses</p>
-                <img class="w-100" src="assets/img/step-nfcsmartcard.jpg" alt="">
+                <img class="w-100" src="assets/img/card/5.png" alt="">
               </div>
             </div>
           </div>
@@ -704,14 +727,14 @@
               <div class="ourecard-card">
                 <div style="background-color: #d1bfb5;" class="our-card-ovarly"></div>
                 <p class="text-start">Opportunities</p>
-                <img class="w-100" src="assets/img/Nfcsmartcard3.jpg" alt="">
+                <img class="w-100" src="assets/img/card/4.png" alt="">
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="ourecard-card">
                 <div style="background-color: #ff5b12;" class="our-card-ovarly"></div>
                 <p>Threats</p>
-                <img class="w-100" src="assets/img/Nfcsmartcard3.jpg" alt="">
+                <img class="w-100" src="assets/img/card/3.png" alt="">
               </div>
             </div>
           </div>
@@ -862,6 +885,82 @@
         </div>
       </div>
     </section>
+    <!-- ===== design your card section ==== -->
+     <section class="pt-5 design-you-card">
+      <div class="container">
+        <div class="row row-gap-3">
+          <div class="col-12 col-lg-6">
+            <img class="w-100" src="assets/img/card/5.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2 class="section-heading text-start">Design Your Card</h2>
+            <p>800 BDT</p>
+            <p>
+              NFC Smart is a revolutionary way to connect people and businesses via NFC business cards. Share information, photos, and videos instantly with a single tap or scan. Explore the possibilities.
+            </p>
+            <hr>
+            <button onclick="cardDesignPopup();" class="btn-orange arrow-effect">
+              Design your card <span><i class="fa-solid fa-arrow-right-long"></i><span>
+            </span></span></button>
+          </div>
+        </div>
+      </div>
+      <!-- ===== desing your card popup ==== -->
+      <div style="display: none;" class="design-popup">
+        <div class="mx-5">
+          <button onclick="cardDesignPopupClose ();" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <p class=" fw-bold fs-4 mb-5">
+                  Note: If you looking for design assistance, simply just fill your details and checkout, our team will redesign the card and send you preview before print.
+                </p>
+                <div>
+                  <img class="w-100" src="assets/img/card/5.png" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div>
+                  <button class="btn-orange">Front side</button>
+                  <button class="btn-orange">Back side</button>
+                </div>
+                <div class="my-3">
+                  <p class="m-0">choose a card color</p>
+                  <div class="d-flex gap-2">
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                    <div class="card-color"></div>
+                  </div>
+                </div>
+                <form action="">
+                  <div class="popu-input-container">
+                    <input type="text" placeholder="your name" required><br><br>
+                    <input type="text" placeholder="Phone Number Job Tile or Company Name" required><br><br>
+                    <input type="text" placeholder="Phone Number Job Tile or Company Name">
+                    <br><br>
+                    <div class="position-relative m-auto" style="width: fit-content;">
+                      <input style="width: 100%;" type="file" name="file-upload" accept="image/*">
+                      <div class="img-up-overlay">
+                          <span><i class="fa-solid fa-upload"></i></span>
+                          <p class="m-0">Logo/</p>
+                          <p class="m-0">img</p>
+                      </div>
+                    </div>
+                  </div>
+                  <input class="mt-5 card-dt-sub" type="submit" value="Add to Card">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
     <!-- ========== FQA =========== -->
     <div id="faq" class="faq py-5">
       <div class="container">
@@ -1034,7 +1133,7 @@
         </div>
         <div class="col-12 col-md-5">
           <ul class="footer-item">
-            <li><a href="#">About US</a></li>
+            <li><a href="/aboutus.html">About US</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Press</a></li>
             <li><a href="#">Contact</a></li>

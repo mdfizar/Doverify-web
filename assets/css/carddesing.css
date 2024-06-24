@@ -1,0 +1,49 @@
+/* === design you card section ====== */
+.design-popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 700px;
+  background-color: rgb(241, 241, 241);
+  z-index: 100;
+  overflow-y: scroll;
+}
+.design-you-card .close-btn {
+  float: right;
+}
+.card-color {
+  width: 40px;
+  height: 40px;
+  border: 10px solid rgba(206, 206, 206, 0.967);
+  border-radius: 50%;
+}
+.popu-input-container input {
+  width: 100%;
+  padding: 10px 7px;
+
+}
+.img-up-overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn1color);
+  color: white;
+  pointer-events: none;
+  border-radius: 30px;
+  gap: 10px;
+}
+.card-dt-sub {
+  width: 100%;
+  padding: 10px 7px;
+  border-radius: 30px;
+  border: 1px solid gray;
+  background-color: var(--btn1color);
+  color: white;
+  
+}

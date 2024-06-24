@@ -1,32 +1,11 @@
-// //  language dropdown menu ======
-// var dropdown = document.querySelector(".Dropdwon");
-// var dropdonwItem = document.querySelector(".Dropdown-item");
-// function handdleDropdown() {
-//   dropdown.addEventListener('click', () => {
-//     if (dropdonwItem.style.display === "none") {
-//       dropdonwItem.style.display = "block";
-//     } else {
-//       dropdonwItem.style.display = "none";
-//     }
-//   });
-// }
-//   handdleDropdown(); 
-
-// // product dropdown menu =====
-// var dropdownproduct = document.querySelector(".product-dropdown");
-// var dropdonwItemproduct = document.querySelector(".product-dropdown-item");
-// function Dropdownproduct() {
-//   dropdownproduct.addEventListener('click', () => {
-//     if (dropdonwItemproduct.style.display === "none") {
-//       dropdonwItemproduct.style.display = "block";
-//     } else {
-//       dropdonwItemproduct.style.display = "none";
-//     }
-//   });
-// }
-//   Dropdownproduct(); 
-
-
+// banner section slider ======
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // wthats new slider ==========
 var swiper = new Swiper(".whatsNew_slider", {
@@ -71,5 +50,19 @@ showHide.forEach((item) => {
     }
   });
 });
+// card desing popup ==========
+function cardDesignPopup () {
+  var cardPopup = document.querySelector(".design-popup");
+  if(cardPopup.style.display ==="none") {
+    cardPopup.style.display ="block";
+  }  
+}
+function cardDesignPopupClose () {
+  var cardPopup = document.querySelector(".design-popup");
+  if(cardPopup.style.display ==="block") {
+    cardPopup.style.display ="none";
+  }  
+}
+
 
 
