@@ -72,7 +72,7 @@ body {
 
 .read-btn p {
   color: var(--btn1color);
-  font-size: var(--titlefontsize);
+  font-size: var(--decriptionfontsize);
 }
 
 .read-btn i {
@@ -80,7 +80,7 @@ body {
 }
 
 .read-btn:hover i {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 .whatsup-btn {
