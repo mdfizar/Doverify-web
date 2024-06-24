@@ -56,8 +56,8 @@ var swiper = new Swiper(".whatsNew_slider", {
 
 // aos ======
 AOS.init();
-// faq ========
 var showHide = document.querySelectorAll(".faq-item")
+
 showHide.forEach((item) => {
   item.addEventListener("click", () => {
     var icon = item.querySelector(".faq-item span i");
