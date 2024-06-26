@@ -1,6 +1,12 @@
 // banner section slider ======
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -63,6 +69,13 @@ function cardDesignPopupClose () {
     cardPopup.style.display ="none";
   }  
 }
+
+// reques demo ===========
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      preferredCountries: ["us", "gb", "ca", "au"],
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
 
 
 

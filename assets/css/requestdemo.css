@@ -1,0 +1,78 @@
+.requestdemo-container {
+  padding-top: 100px;
+}
+.requestdemo-form-container {
+ max-width: 800px;
+ margin: 0px auto;
+
+}
+.select-card-type {
+  margin-left: 55px;
+  padding: 6px 5px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border: none;
+}
+  .input {
+  width: 100%;
+  padding: 10px 7px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  border-radius: 7px;
+  transition: all 0.8s ease-in-out;
+}
+.input-container .input:focus {
+  background-color: #000;
+  color: #ffffff;
+}
+.input-container .input:focus::placeholder{
+  color: white;
+}
+/*  ======== collect phone number ========= */
+.iti {
+  display: block !important;
+  
+}
+.input-container .telinput {
+  outline: none;
+  padding: 10px 7px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 7px;
+  transition: all 0.8s ease-in-out;
+}
+.input-container .telinput:focus {
+  background-color: #000;
+  color: white;
+}
+.input-container .telinput:focus::placeholder{
+  color: #ffff;
+}
+
+
+.radio input,
+.radio label {
+  margin: 10px 0px;
+}
+.self {
+  margin-left: 110px;
+}
+.radio {
+  position: relative;
+
+  width: 70%;
+  
+}
+.radio .organization-quntity {
+  position: absolute;
+  top: 0px;
+  background-color: #ffffff;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+.radio .organization-quntity span {
+  display:block;
+  margin: 3px 0px;
+}

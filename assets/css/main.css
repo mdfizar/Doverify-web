@@ -1,5 +1,7 @@
 /* ======= galobal css ========== */
 :root {
+  --primary-color: #ff0000;
+  --secondary-color: #121212;
   --btn1color: #ff0000;
   --btn-primary: #121212;
   --text-color: #293a4e;
@@ -10,6 +12,7 @@
   --bascolor: #250f6b;
   --titlefontsize: 20px;
   --decriptionfontsize: 16px;
+  --secondary-bg-color: #f0f0f07a;
 }
 
 .pa1 {
@@ -108,6 +111,9 @@ body {
   font-size: 36px;
   font-weight: 700;
 }
+.section-devider{
+  color: #00000036;
+ }
 
 /* ======== description ========= */
 .descripton {
@@ -125,6 +131,11 @@ header {
   border-bottom: 1px solid #edf1f4;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   z-index: 90;
+}
+.header-container{
+  max-width: 1450px; 
+  margin: 10px auto; 
+  padding: 0px 20px;
 }
 
 .tolggeicon {
@@ -284,28 +295,33 @@ header {
   align-items: center;
   box-shadow: 0px 0px 0px 0px !important;
 }
-
-.swiper-slide img {
+.banner-slider-container .swiper-slide img {
+  border: 2px solid rgb(242, 235, 235);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+}
+ .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  content: "hell" !important;
-  color: red;
+  content: '' !important;
 }
 .next {
  right: 20px !important;
+ color: #ff0000 !important;
 
 }
 .prev{
   left: 20px !important;
+  color: #ff0000 !important;
 }
 
 /* ====== NFC worked =========== */
 .nfc-worked {
-  background-color: #ff5b121a;
+  background-color: #f0f0f07a;
 }
 
 .worked-show>div {
@@ -315,16 +331,135 @@ header {
 }
 
 .worked-show>div div {
-  width: 200px;
-  height: 200px;
-  border: 1px solid gray;
-  border-radius: 50%;
+	color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 2px 1px #ff0000;
+
+}
+.worked-show>div div:hover {
+  background:red;
+  color:#ffffff;
+
+}
+
+.dv-rating-box{
+	background: red;
+    color: #ffffff !important;
+}
+
+
+/*-- ======= order managment section ========= */
+.oder-manegment-container {
+  border: 1px solid red;
+}
+.nfc-oder-manegmet-img-hover {
+  overflow: hidden;
+  border-right: 1px solid red;
+
+}
+.nfc-oder-manegmet-img-hover img {
+  transition: all 0.6s ease-in-out;
+}
+.nfc-oder-manegmet-img-hover:hover img {
+  transform: scale(1.1);
+}
+.setup-process-container {
   display: flex;
-  flex-direction: column;
+}
+.setup-title-container {
+  height: 340px;
+  width: 60px;
+  background-color: red;
+  position: relative;
+}
+.setup-title {
+  position: absolute;
+  right: -172px;
+  top: 95px;
+  transform: rotate(-90deg);
+  width: 400px;
+  color: white;
+  font-size: 25px;
+  
+  
+}
+.setup-item-container {
+  margin-left: 20px;
+}
+.setup-item-container .setup {
+  position: relative;
+  height: 86px;
+  background-color: red;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  clip-path: polygon(0 0, 86% 0, 89% 54%, 86% 100%, 0 100%)
+}
+.setup .step-1 {
+  display: inline-block;
+}
+.setup .step-1,
+ .setup .step-2,
+ .setup .step-3 {
+  position: relative;
+  width: 66px;
+  height: 90px;
+  background-color: rgb(43, 0, 255);
+  color: white;
+  clip-path: polygon(15% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+.setup .step-1 p,
+ .setup .step-2 p,
+ .setup .step-3 p {
+  font-size: 16px;
+  margin: 0px;
+ }
+.setup .step-1 .number,
+ .setup .step-2 .number,
+ .setup .step-3 .number {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+ }
+ .number-position {
+  position: absolute;
+  left: 30px;
+  top: -5px;
+ }
+ .step-description {
+  position: absolute;
+  top: 12px;
+  left: 110px;
+  display: inline-block;
+  width: 200px;
+ }
+ .step-description p {
+  font-size: 14px;
+  margin: 0px;
+  color: #fff;
+ }
+ .step-icon-container {
+  position: absolute;
+  right: 80px;
+  top: 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
 
-}
+ }
+ .step-icon-container i {
+  font-size: 25px;
+ }
 
 /* ========= doverify-step section ==========  */
 .doverify-step-container>div {
@@ -545,6 +680,14 @@ header {
   transition: all 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+.best-sale {
+  position: absolute;
+  transform: rotate(33deg);
+  top: 36px;
+  right: 9px;
+  font-weight: 700;
+  color:#08347b;
+}
 
 .pricing-head {
   text-align: center;
@@ -564,7 +707,7 @@ header {
   font-weight: 400;
 }
 .fa-circle-xmark {
-  color: red;
+  color: #8f0707;
 }
 
 /* ======= hover effect ========= */
@@ -638,15 +781,15 @@ header {
 }
 
 .ourecard-card p {
-  position: absolute;
-  right: 50%;
-  top: 7%;
-  font-size: 20px;
-  font-weight: 700;
-  z-index: 20;
-  color: #ff5b12db;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
+	position: absolute;
+    /* right: 55%; */
+    top: 2%;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 20;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .our-card-container>div {
@@ -655,6 +798,11 @@ header {
 
 .ourecard-card:hover p {
   opacity: 1;
+  background: #ff0000eb;
+  border-radius: 5px;
+  padding: 20px;
+  /* margin-left: 0%; */
+  width: 300px;
 }
 
 /* ======== whats new slider section =========== */
@@ -664,6 +812,35 @@ header {
   overflow: visible !important;
   position: static !important;
 }
+.slide-item-position {
+  position: relative;
+  width: 100%;
+  height: 100%;
+ }
+  /* ==== product hover effect ======== */
+.product-img-container {
+  position: relative;
+  width: 275px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+.whatsNew_slider .slide-item:hover .product-img-container {
+  transform: rotateY(180deg);
+}
+.produc-img-front {
+      position: absolute;
+      width: 100%;
+      backface-visibility: hidden;
+      transition: all 0.5s ease-in-out;
+}
+.produc-img-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
 
 .swiper-slide {
   text-align: center;
@@ -676,12 +853,40 @@ header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.whatsNew_slider .slide-item {
+/* .whatsNew_slider .slide-item {
   display: flex;
   width: 100%;
   height: 100%;
   padding: 15px;
+} */
+.slide-item {
+   border: 1px solid red;
+   padding: 30px;
 }
+
+ .slide-item .sale-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: var(--decriptionfontsize);
+  color: white;
+  background-color: red;
+  padding: 0px 10px;
+ }
+ .slide-item-position .card-name {
+  font-size: var(--titlefontsize);
+  margin-top: 20px;
+ }
+ .slide-item .price {
+  color: #ff0000;
+  font-size: var(--decriptionfontsize);
+ }
+ .slide-item .descunt-text {
+  text-decoration: line-through;
+  font-size: var(--decriptionfontsize);
+  margin-left: 20px;
+  font-weight: 700;
+ }
 
 .whatsNew_slider .slide-item-text {
   width: 70%;
@@ -703,25 +908,39 @@ header {
   height: 100%;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.whatsNew_slider .swiper-button-next,
+.whatsNew_slider .swiper-button-prev {
   color: #ff5b12 !important;
   height: 30px;
   width: 30px
 }
 
-.swiper-button-prev {
+.whatsNew_slider .swiper-button-prev {
   left: -20px !important;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
 }
 
-.swiper-button-next {
+.whatsNew_slider .swiper-button-next {
   right: -20px !important;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
 }
-
+.whats-slider-hover:hover  .swiper-button-next {
+  opacity: 1;
+} 
+.whats-slider-hover:hover  .swiper-button-prev {
+  opacity: 1;
+} 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: '' !important;
 }
+
+/* ======= Design-Your-Card ====*/
+.design-you-card{
+	background: var(--secondary-bg-color);
+};
 
 /* ======= faq section ========= */
 .faq-container {
@@ -793,7 +1012,7 @@ footer {
 
 .footer-item li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-color) !important;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
@@ -801,7 +1020,6 @@ footer {
 .footer-item li a:hover {
   color: #ff0000;
 }
-
 .footer-icon span i {
   font-size: 25px;
   color: var(--text-color);
@@ -839,6 +1057,10 @@ footer {
   .swiper-button-next {
     right: 0px !important;
   }
+  .product-img-container {
+    width: 250px;
+    height: 150px;
+  }
 
   .service-card1,
   .service-card2 {
@@ -857,6 +1079,16 @@ footer {
 
   .whatsup-btn {
     margin: 10px auto;
+  }
+  .whatsNew_slider .swiper-button-next,
+  .whatsNew_slider .swiper-button-prev {
+    opacity: 1;
+  }
+  .whatsNew_slider .swiper-button-prev {
+    left: 2px  !important;
+  }
+  .whatsNew_slider .swiper-button-next {
+    right: 2px !important;
   }
 
   /* footer  */
