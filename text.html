@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Effect with Internal CSS</title>
+  <style>
+    .card {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      /* perspective: 1000px; Optional: Adds 3D perspective */
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* Ensures the back face is not visible */
+      transition: transform 0.6s ease; /* Smooth transition for 3D flip */
+    }
+
+    .front {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .back {
+      background-color: #e0e0e0;
+      transform: rotateY(180deg); /* Initially hidden */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card:hover .front {
+      transform: rotateY(-180deg); /* Flips to back side on hover */
+    }
+
+    .card:hover .back {
+      transform: rotateY(0deg); /* Flips to front side on hover */
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="front">
+    <!-- Front content -->
+    Front Part
+  </div>
+  <div class="back">
+    <!-- Back content -->
+    Back Part
+  </div>
+</div>
+
+</body>
+</html>
+
